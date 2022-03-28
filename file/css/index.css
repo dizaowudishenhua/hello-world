@@ -1,3 +1,8 @@
+@keyframes waitting {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   background-color: #e9faff;
   color: #555;
@@ -26,6 +31,7 @@ body {
   font-stretch: normal;
   font-size: 25px;
   line-height: 35px;
+  margin-left: -102px;
   padding-top: 10px;
   text-align: center;
 }
@@ -43,6 +49,10 @@ body {
   margin-right: 10px;
   text-decoration: none;
 }
+.bottem1 a:hover {
+  color: red;
+  text-decoration: underline;
+}
 #content {
   font-size: 19pt;
   color: #555;
@@ -50,4 +60,16 @@ body {
 }
 #content p {
   margin-left: 1em;
+}
+.search {
+  margin-top: 300px;
+}
+#waitting {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 4vw;
+  margin-left: -5.3333vw;
+  animation: waitting 1s linear infinite;
 }
